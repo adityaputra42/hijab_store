@@ -19,7 +19,7 @@ class SignInPage extends StatelessWidget {
       body: SafeArea(child: BlocBuilder<AuthBloc, AuthState>(
         builder: (context, state) {
           return Padding(
-            padding: EdgeInsets.symmetric(horizontal: context.width(0.05)),
+            padding: const EdgeInsets.symmetric(horizontal: 24),
             child: LayoutBuilder(
               builder: (context, constraints) => SingleChildScrollView(
                 child: ConstrainedBox(
@@ -27,24 +27,18 @@ class SignInPage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
-                        height: context.height(0.1),
-                      ),
+                      height(42),
                       Image.asset(AppImage.logo, width: 120),
-                      SizedBox(
-                        height: context.height(0.015),
-                      ),
+                      height(8),
                       Text(
                         'Welcome Back\nExplorer!',
-                        style: AppFont.medium18
+                        style: AppFont.medium16
                             .copyWith(color: Theme.of(context).indicatorColor),
                       ),
-                      SizedBox(
-                        height: context.height(0.05),
-                      ),
+                      height(24),
                       Center(
                         child: Container(
-                          padding: EdgeInsets.all(context.width(0.05)),
+                          padding: const EdgeInsets.all(16),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
                               color: Theme.of(context).cardColor),
@@ -57,9 +51,7 @@ class SignInPage extends StatelessWidget {
                                 style: AppFont.semibold20.copyWith(
                                     color: Theme.of(context).indicatorColor),
                               ),
-                              SizedBox(
-                                height: context.height(0.03),
-                              ),
+                              height(20),
                               InputText(
                                 hintText: "Enter email",
                                 title: "Email",
@@ -68,9 +60,7 @@ class SignInPage extends StatelessWidget {
                                 filledColor:
                                     Theme.of(context).colorScheme.surface,
                               ),
-                              SizedBox(
-                                height: context.height(0.02),
-                              ),
+                              height(16),
                               InputText(
                                 hintText: "Enter password",
                                 title: "Password",
@@ -79,25 +69,19 @@ class SignInPage extends StatelessWidget {
                                 filledColor:
                                     Theme.of(context).colorScheme.surface,
                               ),
-                              SizedBox(
-                                height: context.height(0.02),
-                              ),
+                              height(16),
                               Text(
                                 "Forgot Password?",
                                 style: AppFont.medium14.copyWith(
                                     color: Theme.of(context).primaryColor),
                               ),
-                              SizedBox(
-                                height: context.height(0.03),
-                              ),
+                              height(20),
                               PrimaryButton(
                                   title: 'Sign In',
                                   onPressed: () {
                                     context.goNamed('main');
                                   }),
-                              SizedBox(
-                                height: context.height(0.04),
-                              ),
+                              height(24),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
@@ -106,7 +90,7 @@ class SignInPage extends StatelessWidget {
                                     style: AppFont.reguler12.copyWith(
                                         color: Theme.of(context).hintColor),
                                   ),
-                                  const SizedBox(width: 8),
+                                  width(8),
                                   InkWell(
                                     onTap: () {
                                       context.goNamed("sign_up");
@@ -124,9 +108,7 @@ class SignInPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
-                        height: context.height(0.05),
-                      ),
+                      height(24)
                     ],
                   ),
                 ),

@@ -38,7 +38,7 @@ class InputText extends StatelessWidget {
   final BorderRadius? borderRadius;
   final BorderSide? borderSide;
   final Color? borderColor;
-  final double? height;
+
   final TextAlign? textAlign;
   const InputText(
       {super.key,
@@ -73,7 +73,6 @@ class InputText extends StatelessWidget {
       this.contentPadding,
       this.borderRadius,
       this.borderColor,
-      this.height,
       this.textAlign,
       this.titleStyle});
 
@@ -99,9 +98,7 @@ class InputText extends StatelessWidget {
                       crossTitle ?? const SizedBox()
                     ],
                   ),
-                  SizedBox(
-                    height: context.height(0.01),
-                  )
+                  height(8),
                 ],
               ),
         TextFormField(

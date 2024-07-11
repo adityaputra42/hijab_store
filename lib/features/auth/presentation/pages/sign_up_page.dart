@@ -32,7 +32,7 @@ class SignUpPage extends StatelessWidget {
                       margin: const EdgeInsets.symmetric(
                         vertical: 24,
                       ),
-                      padding: EdgeInsets.all(context.width(0.05)),
+                      padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(12),
                           color: Theme.of(context).cardColor),
@@ -41,16 +41,14 @@ class SignUpPage extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Image.asset(AppImage.logo, width: 120),
-                          const SizedBox(
-                            height: 16,
-                          ),
+                          height(16),
                           Text(
                             'Barakallah Hijab\nStore',
                             style: AppFont.medium16.copyWith(
                                 color: Theme.of(context).indicatorColor),
                             textAlign: TextAlign.center,
                           ),
-                          const SizedBox(height: 16),
+                          height(16),
                           InputText(
                             hintText: "Enter username",
                             title: "Username",
@@ -58,7 +56,7 @@ class SignUpPage extends StatelessWidget {
                             controller: state.usernameSignUpController,
                             filledColor: Theme.of(context).colorScheme.surface,
                           ),
-                          const SizedBox(height: 16),
+                          height(16),
                           InputText(
                             hintText: "Enter email",
                             title: "Email",
@@ -66,7 +64,7 @@ class SignUpPage extends StatelessWidget {
                             controller: state.emailSignUpController,
                             filledColor: Theme.of(context).colorScheme.surface,
                           ),
-                          const SizedBox(height: 16),
+                          height(16),
                           InputText(
                             hintText: "Enter password",
                             title: "Password",
@@ -74,7 +72,7 @@ class SignUpPage extends StatelessWidget {
                             controller: state.passwordSignUpController,
                             filledColor: Theme.of(context).colorScheme.surface,
                           ),
-                          const SizedBox(height: 16),
+                          height(16),
                           InputText(
                             hintText: "Confirm your password",
                             title: "Confirm Password",
@@ -82,9 +80,9 @@ class SignUpPage extends StatelessWidget {
                             controller: state.confirmSignUpController,
                             filledColor: Theme.of(context).colorScheme.surface,
                           ),
-                          const SizedBox(height: 24),
+                          height(24),
                           PrimaryButton(title: 'Sign Up', onPressed: () {}),
-                          const SizedBox(height: 24),
+                          height(24),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -93,7 +91,7 @@ class SignUpPage extends StatelessWidget {
                                 style: AppFont.reguler12.copyWith(
                                     color: Theme.of(context).hintColor),
                               ),
-                              const SizedBox(width: 8),
+                              width(8),
                               InkWell(
                                 onTap: () {
                                   context.pop();

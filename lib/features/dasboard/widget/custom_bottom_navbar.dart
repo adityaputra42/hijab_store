@@ -4,8 +4,8 @@ import 'package:iconify_flutter_plus/icons/ph.dart';
 import 'package:iconify_flutter_plus/icons/material_symbols.dart';
 import 'package:iconify_flutter_plus/icons/mdi.dart';
 
-import '../../../../core/theme/app_color.dart';
-import '../../../../core/theme/app_font.dart';
+import '../../../core/theme/app_color.dart';
+import '../../../core/theme/app_font.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
   final int? selectedIndex;

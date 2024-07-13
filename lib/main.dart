@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         routerConfig: AppRoutes.instance.route(),
         title: 'Barakallah Hijab',
         debugShowCheckedModeBanner: false,
-        theme: Styles.themeData(true, context),
+        theme: Styles.themeData(false, context),
       ),
     );
   }

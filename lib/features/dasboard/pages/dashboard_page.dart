@@ -1,5 +1,5 @@
-import 'package:barakallah_hijab/features/dasboard/presentation/bloc/dashboard_bloc.dart';
-import 'package:barakallah_hijab/features/dasboard/presentation/widget/custom_bottom_navbar.dart';
+import 'package:barakallah_hijab/features/dasboard/bloc/dashboard_bloc.dart';
+import 'package:barakallah_hijab/features/dasboard/widget/custom_bottom_navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
